@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayant Digital</title>
+    <meta name="description" content="Professional photography and cinematic videography for weddings, portraits, families, birthdays, engagements, celebrations, cultural events and corporate events.">
+    <meta name="keywords" content="photography, videography, wedding photography, portrait photography, candid photography, cinematography, [CITY] photographer">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Jayant Digital — Photography & Cinematography">
+    <meta property="og:description" content="We don't just take photos. We preserve stories. Editorial photography and cinematic films.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero/hero.jpg">
+    
+    <!-- Twitter Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jayant Digital — Photography & Cinematography">
+    <meta name="twitter:description" content="Editorial photography and cinematic films created around real emotions.">
+    <meta name="twitter:image" content="assets/images/hero/hero.jpg">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Jayant Digital",
+      "image": "assets/images/hero/hero.jpg",
+      "description": "Professional photography and cinematic videography studio specializing in weddings, portraits, candid moments, and emotional storytelling.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[BUSINESS ADDRESS]",
+        "addressLocality": "[CITY]",
+        "addressRegion": "[STATE]",
+        "addressCountry": "[COUNTRY]"
+      },
+      "telephone": "[PHONE NUMBER]",
+      "email": "[EMAIL ADDRESS]",
+      "priceRange": "$$$"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Primary Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Background Particle & Ambient Light Canvas -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- Fixed Header Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#scene-intro" class="nav-logo" aria-label="Studio Home">
+                <span class="logo-title">Jayant Digital</span>
+                <span class="logo-subtitle">PHOTOGRAPHY</span>
+            </a>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#scene-story" class="nav-link">Story</a>
+                <a href="#scene-services" class="nav-link">Craft</a>
+                <a href="#scene-work" class="nav-link">Work</a>
+                <a href="#scene-films" class="nav-link">Films</a>
+                <a href="#scene-stories" class="nav-link">Stories</a>
+                <a href="#scene-about" class="nav-link">About</a>
+                <a href="#scene-collections" class="nav-link">Services</a>
+                <a href="#scene-contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#scene-contact" class="btn btn-primary nav-cta">BOOK YOUR DATE</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Mobile Navigation Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-links">
+                <a href="#scene-intro" class="mobile-link">HOME</a>
+                <a href="#scene-story" class="mobile-link">STORY</a>
+                <a href="#scene-services" class="mobile-link">PHOTOGRAPHY & VIDEOGRAPHY</a>
+                <a href="#scene-work" class="mobile-link">PORTFOLIO</a>
+                <a href="#scene-films" class="mobile-link">CINEMATIC FILMS</a>
+                <a href="#scene-stories" class="mobile-link">FEATURED STORIES</a>
+                <a href="#scene-about" class="mobile-link">ABOUT THE STUDIO</a>
+                <a href="#scene-collections" class="mobile-link">COLLECTIONS</a>
+                <a href="#scene-contact" class="mobile-link">CONTACT & BOOKING</a>
+            </div>
+            <div class="mobile-menu-footer">
+                <a href="#scene-contact" class="btn btn-primary btn-full mobile-cta">BOOK YOUR DATE</a>
+                <div class="mobile-socials">
+                    <a href="[INSTAGRAM URL]" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+                    <a href="[YOUTUBE URL]" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+                    <a href="https://wa.me/[WHATSAPP NUMBER]" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+        <!-- CHAPTER 01 — THE FRAME (HERO) -->
+        <section id="scene-intro" class="scene hero-scene">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        PHOTOGRAPHY + CINEMATOGRAPHY — [CITY] • 2026
+                    </div>
+                    <h1 class="hero-title">
+                        YOUR MOMENTS.<br>
+                        YOUR STORY.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Beautifully <em>remembered.</em>
+                    </p>
+                    <p class="hero-description">
+                        Photography and cinematic films created around real people, real emotions, and the moments that matter most. We don't just take photos; we preserve legacy.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#scene-work" class="btn btn-primary">EXPLORE THE WORK</a>
+                        <a href="#scene-contact" class="btn btn-secondary">BOOK YOUR DATE</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">250+</span>
+                            <span class="stat-label">Stories Captured</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">14</span>
+                            <span class="stat-label">Creative Services</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">08+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-media-wrapper reveal">
+                    <div class="editorial-media-frame">
+                        <img src="assets/images/hero/hero-editorial.jpg" alt="Editorial photography couple portrait" width="1200" height="900" fetchpriority="high" class="hero-img">
+                        <div class="frame-tag-bottom">
+                            <span class="indicator-dot"></span>
+                            <span class="meta-text">WEDDING STORY · [CITY]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#scene-story" class="scroll-prompt" aria-label="Scroll to explore story">
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+                <span class="scroll-line"></span>
+            </a>
+        </section>
+
+        <!-- CHAPTER 02 — THE STORY (MANIFESTO & TIMELINE) -->
+        <section id="scene-story" class="scene story-scene">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">CHAPTER TWO — THE STORY</span>
+                    <h2 class="section-heading serif">
+                        We don't just capture what happened.<br>
+                        We capture <em>how it felt.</em>
+                    </h2>
+                    <p class="section-lead">
+                        Every wedding, portrait, and quiet celebration contains unrepeatable human atmosphere. Our approach combines documentary intuition with fine-art composition to record genuine feeling without forcing artificial poses.
+                    </p>
+                </div>
+
+                <div class="story-timeline reveal">
+                    <div class="timeline-spine"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">01</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">NOTICE</h3>
+                            <p class="timeline-desc">We look for the quiet, unscripted moments—the subtle glance, shared laughter, and quiet breath before walking down the aisle.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">02</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">CONNECT</h3>
+                            <p class="timeline-desc">We make people comfortable in front of the lens. Calm guidance replaces rigid direction so your natural energy shines through.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">03</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">FRAME</h3>
+                            <p class="timeline-desc">We compose each frame with intention—mastering natural window light, shadow contrast, organic geometry, and timeless tones.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">04</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">FEEL</h3>
+                            <p class="timeline-desc">We preserve genuine emotion, fluid movement, ambient sound, and warmth so looking back feels like stepping back into time.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">05</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">REMEMBER</h3>
+                            <p class="timeline-desc">We craft archival photographs and heirloom films designed to remain deeply moving across generations and decades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 03 — THE CRAFT (SERVICES) -->
+        <section id="scene-services" class="scene services-scene">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">CHAPTER THREE — THE CRAFT</span>
+                    <h2 class="section-heading serif">
+                        Two ways of seeing.<br>
+                        One way of <em>telling your story.</em>
+                    </h2>
+                </div>
+
+                <!-- Dual Medium Split Cards -->
+                <div class="craft-split reveal">
+                    <div class="craft-card photography-card">
+                        <div class="craft-tag">PHOTOGRAPHY</div>
+                        <h3 class="craft-title serif">Frames that feel like memories.</h3>
+                        <p class="craft-desc">Natural, emotional, timeless photography focused on authentic human connection, delicate details, expressions, and genuine moments.</p>
+                        <a href="#service-list-anchor" class="craft-link">EXPLORE PHOTOGRAPHY &rarr;</a>
+                    </div>
+
+                    <div class="craft-card videography-card">
+                        <div class="craft-tag">CINEMATOGRAPHY</div>
+                        <h3 class="craft-title serif">Films that bring the moment back.</h3>
+                        <p class="craft-desc">Cinematic films that preserve movement, spoken vows, laughter, rich ambient music, atmosphere, and deep narrative emotion.</p>
+                        <a href="#scene-films" class="craft-link">WATCH THE FILMS &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Interactive Service Viewfinder Canvas & Editorial 14 Service List -->
+                <div class="services-wrapper" id="service-list-anchor">
+                    <div class="services-canvas-box reveal">
+                        <canvas id="service-canvas" width="400" height="500"></canvas>
+                        <div class="canvas-overlay-text">
+                            <span class="canvas-tag">INTERACTIVE VIEWFINDER</span>
+                            <p class="canvas-hint">Aperture & Aspect Guides Active</p>
+                        </div>
+                    </div>
+
+                    <div class="services-editorial-list reveal">
+                        <h3 class="services-list-title">CANONICAL CREATIVE SERVICES (14) — CLICK TO BOOK</h3>
+
+                        <!-- 01 Photography Services -->
+                        <div class="service-row" data-service-name="Portrait Photography" data-medium="photography">
+                            <span class="service-num">01</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Portrait Photography</h4>
+                                <p class="service-sub">Fine-art, editorial, and lifestyle portraiture tailored to individual personality.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Candid Photography" data-medium="photography">
+                            <span class="service-num">02</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Candid Photography</h4>
+                                <p class="service-sub">Documentary coverage capturing authentic, unposed reactions as they happen.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Wedding Photography" data-medium="photography">
+                            <span class="service-num">03</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Wedding Photography</h4>
+                                <p class="service-sub">Full-day luxury wedding coverage from rituals to grand celebration.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Newborn Photography" data-medium="photography">
+                            <span class="service-num">04</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Newborn Photography</h4>
+                                <p class="service-sub">Gentle, safe, and soothing baby portraits preserving your child's first days.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Family & Group Photography" data-medium="photography">
+                            <span class="service-num">05</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Family & Group Photography</h4>
+                                <p class="service-sub">Warm multi-generational portraits celebrating family bonds and heritage.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Birthday Photography" data-medium="photography">
+                            <span class="service-num">06</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Birthday Photography</h4>
+                                <p class="service-sub">Vibrant event documentation for landmark birthday celebrations.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Engagement & Pre-Wedding Photography" data-medium="photography">
+                            <span class="service-num">07</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Engagement & Pre-Wedding Photography</h4>
+                                <p class="service-sub">Cinematic couple sessions in curated scenic outdoor locations.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Anniversary Photography" data-medium="photography">
+                            <span class="service-num">08</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Anniversary Photography</h4>
+                                <p class="service-sub">Commemorative portraits honoring years of love and partnership.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <!-- Videography Services -->
+                        <div class="service-row" data-service-name="Cinematic Videography" data-medium="videography">
+                            <span class="service-num">09</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Cinematic Videography</h4>
+                                <p class="service-sub">High-definition 4K motion films with custom color grading and audio.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Wedding & Reception Videography" data-medium="videography">
+                            <span class="service-num">10</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Wedding & Reception Videography</h4>
+                                <p class="service-sub">Feature-length cinematic wedding films and teaser highlight reels.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Engagement & Pre-Wedding Videography" data-medium="videography">
+                            <span class="service-num">11</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Engagement & Pre-Wedding Videography</h4>
+                                <p class="service-sub">Story-driven short films capturing couple romance and laughter.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Birthday & Anniversary Videography" data-medium="videography">
+                            <span class="service-num">12</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Birthday & Anniversary Videography</h4>
+                                <p class="service-sub">Dynamic event recap films highlighting toasts, speeches, and joy.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Cultural Event Videography" data-medium="videography">
+                            <span class="service-num">13</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Cultural Event Videography</h4>
+                                <p class="service-sub">Respectful film coverage for festivals, rituals, and traditional galas.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                        <div class="service-row" data-service-name="Corporate Event Videography" data-medium="videography">
+                            <span class="service-num">14</span>
+                            <div class="service-info">
+                                <h4 class="service-name">Corporate Event Videography</h4>
+                                <p class="service-sub">Professional conference, product launch, and brand event video production.</p>
+                            </div>
+                            <span class="service-arrow">&rarr;</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 04 — THE WORK (ASYMMETRIC GALLERY & LIGHTBOX) -->
+        <section id="scene-work" class="scene work-scene">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">CHAPTER FOUR — THE WORK</span>
+                    <h2 class="section-heading serif">
+                        Selected frames.<br>
+                        Selected <em>stories.</em>
+                    </h2>
+                    <p class="section-lead">A collection of weddings, fine-art portraits, celebrations, families, and films.</p>
+                </div>
+
+
+
+                <!-- Asymmetric Dynamic Portfolio Grid -->
+                <div class="portfolio-grid reveal" id="portfolio-grid">
+                    <!-- Populated dynamically via script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 05 — THE FILMS (CINEMATIC VIDEO SHOWCASE) -->
+        <section id="scene-films" class="scene films-scene dark-scene">
+            <div class="container">
+                <div class="section-header reveal text-light">
+                    <span class="section-eyebrow eyebrow-light">CHAPTER FIVE — CINEMATIC FILMS</span>
+                    <h2 class="section-heading serif text-white">
+                        Some moments <em>deserve to move.</em>
+                    </h2>
+                    <p class="section-lead text-muted-light">Watch selected stories through motion, sound, atmosphere, and voice.</p>
+                </div>
+
+                <div class="films-grid reveal">
+                    <!-- Film Card 01 -->
+                    <div class="film-card" data-video-url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" data-title="THE DAY WE SAID YES" data-category="WEDDING FILM" data-location="[CITY]" data-year="2026">
+                        <div class="film-poster-wrap">
+                            <img src="assets/images/weddings/film-poster.jpg" alt="Wedding film poster" class="film-poster">
+                            <div class="film-play-btn" aria-label="Play Film">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <span class="film-duration">04:32</span>
+                        </div>
+                        <div class="film-info">
+                            <div class="film-meta">WEDDING FILM · [CITY] · 2026</div>
+                            <h3 class="film-title serif">The Day We Said Yes</h3>
+                        </div>
+                    </div>
+
+                    <!-- Film Card 02 -->
+                    <div class="film-card" data-video-url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" data-title="LIGHT ON THE WATER" data-category="ENGAGEMENT FILM" data-location="[CITY]" data-year="2026">
+                        <div class="film-poster-wrap">
+                            <img src="assets/images/engagement/engagement-01.jpg" alt="Engagement film poster" class="film-poster">
+                            <div class="film-play-btn" aria-label="Play Film">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <span class="film-duration">03:15</span>
+                        </div>
+                        <div class="film-info">
+                            <div class="film-meta">ENGAGEMENT FILM · [CITY] · 2026</div>
+                            <h3 class="film-title serif">Light On The Water</h3>
+                        </div>
+                    </div>
+
+                    <!-- Film Card 03 -->
+                    <div class="film-card" data-video-url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" data-title="CELEBRATION OF GENERATIONS" data-category="CULTURAL EVENT FILM" data-location="[CITY]" data-year="2026">
+                        <div class="film-poster-wrap">
+                            <img src="assets/images/candid/candid-01.jpg" alt="Cultural event film poster" class="film-poster">
+                            <div class="film-play-btn" aria-label="Play Film">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <span class="film-duration">05:08</span>
+                        </div>
+                        <div class="film-info">
+                            <div class="film-meta">CULTURAL EVENT FILM · [CITY] · 2026</div>
+                            <h3 class="film-title serif">Celebration of Generations</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 06 — THE STORIES (EDITORIAL CASE STUDY) -->
+        <section id="scene-stories" class="scene stories-scene">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">CHAPTER SIX — THE STORIES</span>
+                    <h2 class="section-heading serif">
+                        A day they'll <em>remember forever.</em>
+                    </h2>
+                </div>
+
+                <article class="case-study reveal">
+                    <div class="case-header">
+                        <span class="case-number">STORY 01</span>
+                        <h3 class="case-title serif">RIYA & ARJUN — AN INTENSE SUNLIT CELEBRATION</h3>
+                        <div class="case-meta">Wedding · [CITY] · 2026 · Photography + Cinematography</div>
+                    </div>
+
+                    <div class="case-grid">
+                        <div class="case-media-large image-reveal">
+                            <img src="assets/images/hero/hero-editorial.jpg" alt="Riya & Arjun wedding main portrait" width="1200" height="900" loading="lazy">
+                        </div>
+                        <div class="case-text-block">
+                            <h4 class="case-subhead serif">The Quiet Arrival</h4>
+                            <p class="case-body">Morning light washed over the courtyard as family gathered. Rather than rushing through forced group lineups, we allowed the morning rituals to unfold naturally, observing the intricate details of silk drapery, laughter in preparation rooms, and gentle blessings.</p>
+                            
+                            <blockquote class="editorial-quote serif">
+                                "The best photographs don't feel posed. They feel remembered."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="case-gallery-duo image-reveal">
+                        <img src="assets/images/candid/candid-01.jpg" alt="Candid wedding ceremony detail" loading="lazy">
+                        <img src="assets/images/engagement/engagement-01.jpg" alt="Sunset couple embrace" loading="lazy">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CHAPTER 07 — THE STUDIO & PROCESS (ABOUT & WORKFLOW) -->
+        <section id="scene-about" class="scene about-scene">
+            <div class="container">
+                <div class="about-grid reveal">
+                    <div class="about-image-col">
+                        <div class="editorial-media-frame">
+                            <img src="assets/images/studio/photographer.jpg" alt="Lead Photographer portrait" width="800" height="1000" loading="lazy">
+                            <div class="frame-tag-bottom">
+                                <span class="indicator-dot"></span>
+                                <span class="meta-text">[PHOTOGRAPHER NAME] · LEAD VISUALIST</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-col">
+                        <span class="section-eyebrow">THE STUDIO</span>
+                        <h2 class="section-heading serif">
+                            Behind the camera.<br>
+                            <em>Ahead of the moment.</em>
+                        </h2>
+
+                        <p class="about-bio">
+                            Founded by <strong>[PHOTOGRAPHER NAME]</strong>, <strong>[STUDIO NAME]</strong> is an independent visual arts studio based in <strong>[CITY], [STATE]</strong>. We specialize in emotion-driven photography and cinematic storytelling for people who value authenticity over artificiality.
+                        </p>
+
+                        <div class="philosophy-box">
+                            <h3 class="philosophy-title">CREATIVE PHILOSOPHY</h3>
+                            <div class="philosophy-statement serif">
+                                Look beyond the obvious.<br><br>
+                                Wait for the expression.<br>
+                                Notice the hands.<br>
+                                Listen to the laughter.<br>
+                                Watch the light.<br><br>
+                                <em>That's where the story lives.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5-Step Production Process Flow -->
+                <div class="process-wrapper reveal" id="scene-process">
+                    <div class="section-header">
+                        <span class="section-eyebrow">CREATIVE PROCESS</span>
+                        <h2 class="section-heading serif">How your story comes to life.</h2>
+                    </div>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-num">01</div>
+                            <h3 class="step-title">DISCOVER</h3>
+                            <p class="step-desc">We listen to your vision, event timeline, family dynamics, and emotional priorities during an initial consultation.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-num">02</div>
+                            <h3 class="step-title">PLAN</h3>
+                            <p class="step-desc">We curate lighting schedules, location scouting notes, and creative direction to ensure seamless day-of coverage.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-num">03</div>
+                            <h3 class="step-title">CAPTURE</h3>
+                            <p class="step-desc">On your event day, we blend unobtrusive candid documentation with artfully guided portraiture.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-num">04</div>
+                            <h3 class="step-title">EDIT</h3>
+                            <p class="step-desc">Each frame is individually color-graded, hand-retouched, and polished; videos receive custom sound design.</p>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-num">05</div>
+                            <h3 class="step-title">DELIVER</h3>
+                            <p class="step-desc">Receive your high-resolution online gallery, cinema video links, and custom archival photo albums.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 08 — THE COLLECTION & FAQ -->
+        <section id="scene-experience" class="scene experience-scene">
+            <div class="container">
+                <!-- Collections / Package Options -->
+                <div class="collections-wrapper reveal" id="scene-collections">
+                    <div class="section-header">
+                        <span class="section-eyebrow">CHAPTER EIGHT — THE COLLECTION</span>
+                        <h2 class="section-heading serif">Tailored investment packages.</h2>
+                        <p class="section-lead">Every celebration is unique. Request a custom quote aligned with your exact date and vision.</p>
+                    </div>
+
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <div class="package-header">
+                                <h3 class="package-name">ESSENTIAL</h3>
+                                <p class="package-sub">Intimate sessions & focused coverage</p>
+                            </div>
+                            <ul class="package-features">
+                                <li>Up to 6 Hours Photography Coverage</li>
+                                <li>One Senior Lead Photographer</li>
+                                <li>High-Res Digital Image Gallery</li>
+                                <li>Color Grading & Retouching</li>
+                                <li>Print Rights Included</li>
+                            </ul>
+                            <a href="#scene-contact" class="btn btn-secondary btn-full">REQUEST A QUOTE</a>
+                        </div>
+
+                        <div class="package-card highlighted-package">
+                            <div class="package-badge">POPULAR COMBO</div>
+                            <div class="package-header">
+                                <h3 class="package-name">COMPLETE STORY</h3>
+                                <p class="package-sub">Photography + Cinematography</p>
+                            </div>
+                            <ul class="package-features">
+                                <li>Full-Day Combined Coverage</li>
+                                <li>Lead Photographers & Cinematographers</li>
+                                <li>4K Cinematic Highlight Film (4-6 min)</li>
+                                <li>Full Ceremony & Ritual Video Feature</li>
+                                <li>Social Media Teaser Reels (Vertical)</li>
+                                <li>Online Gallery + Heirloom Photo Album</li>
+                            </ul>
+                            <a href="#scene-contact" class="btn btn-primary btn-full">REQUEST A QUOTE</a>
+                        </div>
+
+                        <div class="package-card">
+                            <div class="package-header">
+                                <h3 class="package-name">SIGNATURE</h3>
+                                <p class="package-sub">Full weddings & multi-day events</p>
+                            </div>
+                            <ul class="package-features">
+                                <li>Full Wedding Day Photography</li>
+                                <li>Pre-Wedding / Engagement Session</li>
+                                <li>Two Lead Photographers</li>
+                                <li>Handcrafted Hardcover Photo Album</li>
+                                <li>Drone Aerial Imagery (Where Permitted)</li>
+                            </ul>
+                            <a href="#scene-contact" class="btn btn-secondary btn-full">REQUEST A QUOTE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comprehensive FAQ Accordion -->
+                <div class="faq-wrapper reveal">
+                    <div class="section-header">
+                        <span class="section-eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+                        <h2 class="section-heading serif">Everything you need to know.</h2>
+                    </div>
+
+                    <div class="faq-accordion" id="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>How far in advance should I book?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We recommend booking 6 to 12 months in advance for prime wedding dates and 2 to 3 months in advance for portraits, engagements, and intimate family sessions.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Do you provide photography and videography together?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! Our <strong>Complete Story</strong> package combines both photo and video teams under unified creative direction for seamless coordination on your event day.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Can I book photography only?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely. You can select photography-only packages across all 8 photography service categories.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Can I book videography only?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, standalone cinematography coverage is available for weddings, corporate events, and celebrations.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Do you travel for destination events?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we travel across [STATE], [COUNTRY], and internationally for destination weddings and special assignments.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>How many photographers will attend my event?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Depending on your guest count and package choice, coverage ranges from 1 lead photographer up to a 4-person photo team.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>How many cinematographers will attend?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our film teams typically consist of 1 to 3 cinematographers equipped with gimbal stabilizers, audio recorders, and cinema lenses.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>How long until photos are delivered?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>You will receive a 25-image preview within 48 hours. The complete high-resolution gallery is delivered within 3 to 4 weeks.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>How long until films are delivered?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Teaser reels are delivered within 10 days; main cinematic feature films are delivered within 4 to 6 weeks.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Do you provide social media reels?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, vertical 9:16 reels formatted specifically for Instagram and TikTok are included in our film packages.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Do you provide physical photo albums?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we design custom flush-mount Italian leather and linen hardcover albums printed on archival museum-grade paper.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Can packages be customized?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, every quote can be tailored to match multi-day events, additional hours, or specialized equipment needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>What is the booking process?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Submit an inquiry through our form, receive a customized proposal, schedule a consultation call, and secure your date with a retainer deposit and signed agreement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAPTER 09 — THE CONNECTION (CONTACT & BOOKING FORM) -->
+        <section id="scene-contact" class="scene contact-scene dark-scene">
+            <div class="container">
+                <div class="contact-layout reveal">
+                    <div class="contact-info-col">
+                        <span class="section-eyebrow eyebrow-light">CHAPTER NINE — THE CONNECTION</span>
+                        <h2 class="section-heading serif text-white">
+                            Let's create something<br>
+                            <em>worth remembering.</em>
+                        </h2>
+                        <p class="section-lead text-muted-light">
+                            Tell us about your event, your date, and the story you want us to capture. We respond to all inquiries within 24 hours.
+                        </p>
+
+                        <!-- Contact Action Pills -->
+                        <div class="contact-orbs">
+                            <a href="https://wa.me/[WHATSAPP NUMBER]?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20photography%20and%20videography%20services." target="_blank" rel="noopener" class="contact-orb-btn whatsapp-orb">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                                <span>WHATSAPP — Start a conversation</span>
+                            </a>
+
+                            <a href="mailto:[EMAIL ADDRESS]" class="contact-orb-btn email-orb">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <span>EMAIL — Send an inquiry</span>
+                            </a>
+
+                            <a href="[INSTAGRAM URL]" target="_blank" rel="noopener" class="contact-orb-btn insta-orb">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                <span>INSTAGRAM — See recent work</span>
+                            </a>
+
+                            <a href="[YOUTUBE URL]" target="_blank" rel="noopener" class="contact-orb-btn youtube-orb">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                <span>YOUTUBE — Watch the films</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Booking Form -->
+                    <div class="contact-form-col">
+                        <form id="booking-form" class="booking-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name *</label>
+                                    <input type="text" id="form-name" name="name" placeholder="Full Name" required>
+                                    <span class="field-error" id="error-name"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address *</label>
+                                    <input type="email" id="form-email" name="email" placeholder="email@domain.com" required>
+                                    <span class="field-error" id="error-email"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-phone">Phone Number *</label>
+                                    <input type="tel" id="form-phone" name="phone" placeholder="+91 00000 00000" required>
+                                    <span class="field-error" id="error-phone"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-service-medium">Primary Medium *</label>
+                                    <select id="form-service-medium" name="service_medium" required>
+                                        <option value="">Select Service Medium</option>
+                                        <option value="photography">Photography Only</option>
+                                        <option value="videography">Videography Only</option>
+                                        <option value="both">Photography + Videography (Combined)</option>
+                                    </select>
+                                    <span class="field-error" id="error-medium"></span>
+                                </div>
+                            </div>
+
+                            <!-- Conditional Dynamic Service Categories Multi-select -->
+                            <div class="form-group" id="sub-category-group" style="display: none;">
+                                <label>Specific Creative Service Categories *</label>
+                                <div class="checkbox-grid" id="checkbox-grid">
+                                    <!-- Populated via script.js based on medium selection -->
+                                </div>
+                                <span class="field-error" id="error-categories"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-date">Event Date</label>
+                                    <input type="date" id="form-date" name="event_date">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-location">Event Location / Venue</label>
+                                    <input type="text" id="form-location" name="location" placeholder="City or Venue Name">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-guests">Approximate Guest Count</label>
+                                    <input type="text" id="form-guests" name="guests" placeholder="e.g. 150 - 300 guests">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-budget">Budget Range</label>
+                                    <select id="form-budget" name="budget">
+                                        <option value="flexible">Flexible Investment</option>
+                                        <option value="tier1">Essential Tier</option>
+                                        <option value="tier2">Signature Tier</option>
+                                        <option value="tier3">Complete Luxury Story</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Tell Us About Your Event & Story *</label>
+                                <textarea id="form-message" name="message" rows="4" placeholder="Share your vision, timeline, and any special requests..." required></textarea>
+                                <span class="field-error" id="error-message"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-full">SEND INQUIRY</button>
+                                <button type="button" id="whatsapp-direct-btn" class="btn btn-whatsapp btn-full">CHAT ON WHATSAPP &rarr;</button>
+                            </div>
+                            
+                            <div id="form-status-message" class="form-status" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer — Ultra Simple -->
+    <footer class="footer footer-simple">
+        <div class="container footer-simple-container">
+            <p>&copy; 2026 JAYANT DIGITAL STUDIO. ALL RIGHTS RESERVED.</p>
+            <a href="#scene-intro" class="footer-simple-top">BACK TO TOP ↑</a>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Photo Gallery -->
+    <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Image Lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Image">&lsaquo;</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Image">&rsaquo;</button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img" class="lightbox-img">
+            <div class="lightbox-caption-bar">
+                <span class="lightbox-counter" id="lightbox-counter">01 / 12</span>
+                <span class="lightbox-caption" id="lightbox-caption">Project Title</span>
+                <span class="lightbox-category" id="lightbox-category">Category</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal Player for Cinematic Films -->
+    <div id="video-modal" class="video-modal" aria-hidden="true" role="dialog" aria-label="Video Player Modal">
+        <button class="video-modal-close" id="video-modal-close" aria-label="Close Video Player">&times;</button>
+        <div class="video-modal-container">
+            <video id="modal-video-player" controls preload="none" poster="assets/images/weddings/film-poster.jpg">
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="video-modal-info">
+                <h3 id="video-modal-title" class="serif">Film Title</h3>
+                <p id="video-modal-meta">Meta Details</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
